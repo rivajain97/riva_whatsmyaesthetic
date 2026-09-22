@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "whats-my-aesthetic-app",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd app && npm start"],
+      "port": 3000
+    }
+  ]
+}
