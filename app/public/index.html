@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What's My Aesthetic?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-grid-mark" aria-hidden="true"></div>
+      <h1 class="hero-title">What&rsquo;s My<br />Aesthetic?</h1>
+      <p class="hero-subtitle">Your wardrobe, but according to you.</p>
+      <p class="hero-copy">
+        Tell me where you&rsquo;re going, what you&rsquo;re wearing, or what
+        you need an outfit for &mdash; I&rsquo;ll build a recommendation from
+        your real wardrobe, grounded in the aesthetic your favorite outfits
+        already show.
+      </p>
+    </header>
+
+    <section class="ask" aria-label="Ask for an outfit recommendation">
+      <form id="ask-form" class="ask-form">
+        <input
+          id="ask-input"
+          class="ask-input"
+          type="text"
+          name="message"
+          placeholder="What should I wear to dinner?"
+          autocomplete="off"
+        />
+        <button id="ask-button" class="ask-button" type="submit">Ask</button>
+      </form>
+      <p id="ask-hint" class="ask-hint" hidden></p>
+    </section>
+
+    <section id="result-area" class="result-area" aria-live="polite"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

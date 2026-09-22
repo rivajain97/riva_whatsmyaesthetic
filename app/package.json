@@ -1,0 +1,16 @@
+{
+  "name": "whats-my-aesthetic-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone web app for the What's My Aesthetic? outfit recommender.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "dotenv": "^18.0.2",
+    "express": "^5.2.1"
+  }
+}
